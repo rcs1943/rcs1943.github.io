@@ -1,0 +1,42 @@
+<footer>
+    <p>Desarrollado con Astro ©2024 @rcs1943</p>
+    <ul>
+        <li><a href="https://github.com/rcs1943" target="_blank">GitHub</a></li>
+        <li>
+            <a
+                href="https://www.linkedin.com/in/ralf-carrasco-stein-997027245/"
+                target="_blank">LinkedIn</a
+            >
+        </li>
+    </ul>
+</footer>
+
+<style>
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 80px;
+        margin-top: 120px;
+        border-top: 1px solid var(--white-2);
+    }
+    p {
+        color: #6474a2;
+        font-size: 20px;
+    }
+    ul {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+        & li {
+            & a {
+                color: #6474a2;
+                font-size: 20px;
+                text-decoration: none;
+                transition: 0.3s;
+                &:hover {
+                    color: var(--secondary);
+                }
+            }
+        }
+    }
+</style>

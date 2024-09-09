@@ -1,0 +1,59 @@
+---
+import SkillList from "./components/SkillList.astro";
+---
+
+<section>
+    <h1>Hola a todos 👋!</h1>
+    <h2>Soy Ralf Carrasco</h2>
+    <h3>Analista Funcional, Diseñador UX/UI & Desarrollador Web</h3>
+    <SkillList />
+    <button>Descargar CV</button>
+</section>
+
+<style>
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 100px;
+        & h1 {
+            font-size: 4.5rem;
+            font-weight: 600;
+            color: var(--white-1);
+        }
+        & h2 {
+            font-size: 72px;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        & h3 {
+            color: var(--white-2);
+            font-weight: 400;
+            font-size: 26px;
+            padding: 20px 0;
+            margin-bottom: 20px;
+        }
+        button {
+            margin-top: 40px;
+            padding: 12px 80px;
+            font-size: 26px;
+            color: white;
+            border: none;
+            border-radius: 999rem;
+            font-weight: 400;
+            background: linear-gradient(
+                to right,
+                #c26f7c,
+                #22005a
+            ); /* Gradiente de izquierda a derecha */
+            cursor: pointer;
+            transition: 0.3s ease;
+            outline: 2px solid transparent;
+            &:hover {
+                scale: 1.05;
+                outline: 2px solid var(--white-2);
+            }
+        }
+    }
+</style>

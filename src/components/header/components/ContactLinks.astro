@@ -1,0 +1,37 @@
+<nav>
+    <ul>
+        <li>
+            <a href="https://github.com/rcs1943" target="_blank"
+                ><iconify-icon icon="mdi:github"></iconify-icon></a
+            >
+        </li>
+        <li>
+            <a
+                href="https://www.linkedin.com/in/ralf-carrasco-stein-997027245/"
+                target="_blank"
+                ><iconify-icon icon="mdi:linkedin"></iconify-icon></a
+            >
+        </li>
+    </ul>
+</nav>
+
+<style>
+    ul {
+        display: flex;
+        gap: 15px;
+        & li {
+            display: flex;
+            & a {
+                text-decoration: none;
+                & iconify-icon {
+                    color: var(--secondary);
+                    font-size: 30px;
+                    transition: 0.3s;
+                    &:hover {
+                        color: var(--white-0);
+                    }
+                }
+            }
+        }
+    }
+</style>

@@ -1,0 +1,85 @@
+<section>
+    <article>
+        <div class="card">
+            <header>
+                <iconify-icon icon="ph:strategy"></iconify-icon>
+                <h2>Analista <br> Funcional</h2>
+            </header>
+            <p>
+                Transformo los requisitos de los clientes en soluciones
+                tecnológicas. Mi función abarca desde el análisis de
+                necesidades, diseño y planificación, hasta la colaboración con
+                los equipos de desarrollo.
+            </p>
+        </div>
+        <div class="card">
+            <header>
+                <iconify-icon icon="fluent:design-ideas-16-filled"
+                ></iconify-icon>
+                <h2>Diseñador <br> UX / UI</h2>
+            </header>
+            <p>
+                Mi objetivo es diseñar experiencias centradas en el usuario que
+                sean intuitivas y funcionales. Me apasiona resolver desafíos de
+                usabilidad y crear interfaces que impulsen el valor del
+                producto, contribuyendo al éxito del proyecto y al crecimiento
+                de la empresa.
+            </p>
+        </div>
+        <div class="card">
+            <header>
+                <iconify-icon icon="ph:monitor-bold"></iconify-icon>
+                <h2>Desarrollador Frontend con Angular & React</h2>
+            </header>
+            <p>
+                Mi objetivo es crear experiencias atractivas e intuitivas. Me
+                apasiona enfrentar desafíos de la industria y contribuir al
+                crecimiento.
+            </p>
+        </div>
+    </article>
+</section>
+
+<style>
+    section {
+        display: flex;
+        justify-content: center;
+        margin-top: 8rem;
+    }
+    article {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+        border: 1px solid #283044;
+        & .card {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            gap: 20px;
+            & header {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                min-height: 8rem;
+                & iconify-icon {
+                    color: var(--primary);
+                    font-size: 40px;
+                }
+                & h2 {
+                    color: var(--white-1);
+                    font-size: 34px;
+                    font-weight: 600;
+                }
+            }
+            & p {
+                color: var(--paragraph-color);
+                text-wrap: pretty;
+                font-size: 16px;
+                line-height: 26px;
+            }
+        }
+    }
+</style>

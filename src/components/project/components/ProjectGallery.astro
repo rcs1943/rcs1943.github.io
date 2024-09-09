@@ -1,0 +1,91 @@
+<article>
+    <div class="column left">
+        <div class="card">
+            <a href="proyectos/project-odyssey">
+                <span>Project Odyssey | Gestor de Proyectos</span>
+                <img src="/assets/images/projects/project-odyssey/kanban.jpg" alt="Project Odyssey Portrait" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="proyectos/matricula-virtual">
+                <span>Sistema de Gestión de Matrícula Virtual</span>
+                <img src="/assets/images/projects/matricula/Campus.jpg" alt="SGMV Portrait" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="proyectos/dexter">
+                <span>Dexter | Analizador Léxico</span>
+                <img src="/assets/images/projects/dexter/Final.jpg" alt="Dexter Portrait" />
+            </a>
+        </div>
+    </div>
+    <div class="column right">
+        <div class="card">
+            <a href="proyectos/post-a-one">
+                <span>Post A One | Gestor de Carreras Postpago</span>
+                <img
+                    src="/assets/images/projects/postaone/Carrera-En-Curso.jpg"
+                    alt="Post A One Portrait"
+                />
+            </a>
+        </div>
+        <div class="card">
+            <a href="/proyectos/planeamiento">
+                <span
+                    >Módulo de Elaboración y Seguimiento de Planes Operativos</span
+                >
+                <img src="/assets/images/projects/planeamiento/Login.jpg" alt="Planeamiento Portrait" />
+            </a>
+        </div>
+        <div class="card">
+            <a href="/proyectos/sistema-ventas">
+                <span
+                    >Banderitas | Sistema de Ventas</span
+                >
+                <img src="/assets/images/projects/banderitas/venta-registrada.jpg" alt="Planeamiento Portrait" />
+            </a>
+        </div>
+    </div>
+</article>
+
+<style>
+    article {
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
+        margin-top: 60px;
+        & .column {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            &.left {
+                translate: 0 120px;
+            }
+            & .card {
+                position: relative;
+                & a {
+                    text-decoration: none;
+                    color: #c3cadb;
+                    cursor: pointer;
+                    border-radius: 1.5rem;
+                }
+                & span {
+                    position: absolute;
+                    top: 5px;
+                    left: 5px;
+                    padding: 8px 16px;
+                    border-radius: 0.9375rem;
+                    color: #c3cadb;
+                    font-size: 20px;
+                    font-weight: 500;
+                    text-decoration: none;
+                    background-color: #090b11;
+                }
+                & img {
+                    width: 610px;
+                    border-radius: 1.5rem;
+                }
+            }
+        }
+    }
+</style>
